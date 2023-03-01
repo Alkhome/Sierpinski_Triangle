@@ -59,7 +59,7 @@ class SierpinskiTriangle:
             x_new = round_down((prev_point[0] + vertice[0]) / 2)
             y_new = round_down((prev_point[1] + vertice[1]) / 2)
 
-            new_point = [x_new, y_new]
+            new_point = (x_new, y_new)
             all_points.append(new_point)
             prev_point = new_point
 
