@@ -78,8 +78,7 @@ if __name__ == "__main__":
     number_of_points_in_triangle = int(input("Enter the number of points in the triangle: "))
 
     if size_of_triangle < 1 or number_of_points_in_triangle < 1:
-        print("\nYou can't build such a triangle")
-        exit()
+        raise ValueError("\nYou can't build such a triangle")
 
     sierp_t = SierpinskiTriangle(size=size_of_triangle, number_of_points=number_of_points_in_triangle)
     sierp_t.plot()
